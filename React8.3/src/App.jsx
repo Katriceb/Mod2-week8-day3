@@ -2,8 +2,9 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import Students from './components/students';
-import Score from './components/score';
+import Students from './components/Students';
+<components></components>
+import Score from './Score';
 
 function App() {
   const [studentData, setStudentData] = useState([])
@@ -69,13 +70,14 @@ function App() {
       },
     ],
   },
-],
+]
   
 return (
-      
+    
+
   <div>
     {studentData.students.map((student) => (
-      <Students studentOjects={student} key={student.name} />
+      <Students studentObjects={student} key={index} />
    ) )}
     </div>
     )};
